@@ -15,18 +15,21 @@ By SourceCode347
 '''
 print(logo)
 while True:
-    a = str(random.randint(0,255))
-    b = str(random.randint(0,255))
-    c = str(random.randint(0,255))
-    d = str(random.randint(0,255))
-    target = a+"."+b+"."+c+"."+d
-    p = Popen(['nmap', '-p455','--script','smb-vuln-ms17-010',target], stdin=PIPE, stdout=PIPE, stderr=PIPE)
-    output, err = p.communicate(b"input data that is passed to subprocess' stdin")
-    p_status = p.wait()
-    rc = p.returncode
-    #print(output)
-    if "VULNERABLE" in str(output):
-        print("Vuln Found On Target : "+target)
-        with open("vulns.txt","a") as f:
-            f.write(target+"\n")
-            f.close()
+    try:
+        a = str(random.randint(0,255))
+        b = str(random.randint(0,255))
+        c = str(random.randint(0,255))
+        d = str(random.randint(0,255))
+        target = a+"."+b+"."+c+"."+d
+        p = Popen(['nmap', '-p455','--script','smb-vuln-ms17-010',target], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        output, err = p.communicate(b"input data that is passed to subprocess' stdin")
+        p_status = p.wait()
+        rc = p.returncode
+        #print(output)
+        if "VULNERABLE" in str(output):
+            print("Vuln Found On Target : "+target)
+            with open("vulns.txt","a") as f:
+                f.write(target+"\n")
+                f.close()
+    except:
+        pass
