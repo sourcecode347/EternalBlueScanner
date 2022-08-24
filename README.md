@@ -5,11 +5,11 @@ A Simple Random Scanner & An Evil Brute Scanner Of EternalBlue Vulnerability Det
 
 To use the simple random scanner execute this script
 
-  python3 eternalblue.py
+    python3 eternalblue.py
 
 To The Evil Brute Scanner execute this script 
 
-  python3 EvilEternalBlue.py -a 94 -b 143
+    python3 EvilEternalBlue.py -a 94 -b 143
 
 Run these Scripts Behind supervisor process on a Linux Server and wait for Detections
 
