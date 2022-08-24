@@ -7,7 +7,7 @@ To use the simple random scanner execute this script
 
     python3 eternalblue.py
 
-To The Evil Brute Scanner execute this script 
+To Use The Evil Brute Scanner execute this script 
 
     python3 EvilEternalBlue.py -a 94 -b 143
 
