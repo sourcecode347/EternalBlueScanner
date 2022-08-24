@@ -1,7 +1,7 @@
 # EternalBlueScanner
 A Simple Random Scanner & An Evil Brute Scanner Of EternalBlue Vulnerability Detection 
 
-<img src='https://github.com/sourcecode347/EternalBlueScanner/EvilEternalBlue.png' style='width:80%;height:auto;'/>
+<img src='https://github.com/sourcecode347/EternalBlueScanner/blob/main/EvilEternalBlue.png' style='width:80%;height:auto;'/>
 
 To use the simple random scanner execute this script
 
