@@ -105,7 +105,7 @@ class PortSpider:
                     print(Fore.GREEN + f"✅ Target IP : {ip} is Vulnerable to EternalBlue Exploit (!)")
                     self.saveurl(ip)
                 else:
-                    print(Fore.RED + f"Target IP : {ip} is Not Vulnerable to EternalBlue Exploit (!)")
+                    print(Fore.RED + f"[-] Target IP : {ip} is Not Vulnerable to EternalBlue Exploit (!)")
             sock.close()
             
         except Exception as e:
